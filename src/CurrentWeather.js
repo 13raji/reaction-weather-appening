@@ -12,12 +12,19 @@ export default function Currentweather(){
                     </div>
                     <div className="col-2">
                         <h2>10°C</h2>
-                        <h6>C|F</h6>
+                        
                     </div>
                     <div className="col-4"></div>
                 </div>
             </div>
-            <div className= "Current row">
+            <div className="units row">
+                <div className="col-5"></div>
+                <div className="col-2">
+                    <h6>C|F</h6>
+                </div>
+                <div className="col-5"></div>
+            </div>
+            <div className= "Current-specifics row">
                 <div className="col-6">
                     <ul>
                         <li>Wednesday 12:00</li>
