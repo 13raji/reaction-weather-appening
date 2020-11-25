@@ -1,27 +1,14 @@
-
+import React from 'react';
 import './App.css';
+import Footer from './Footer';
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
       <h1>Raji's React Weather App</h1>
-      <footer>An <a
-          className="Link"
-          href="https://github.com/13raji/reaction-weather-appening"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          open sourced
-        </a> app created by <a
-          className="Link"
-          href="https://instagram.com/13raji"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Runrajiran
-        </a> </footer>
-        </div>
+      <Footer />
+      </div>
     </div>
   );
 }
