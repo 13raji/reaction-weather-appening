@@ -4,6 +4,23 @@ import './CurrentWeather.css';
 export default function Currentweather(){
     return(
         <div className="Weather">
+            <div className="Search">
+                <form>
+                    <div className="row">
+                        <div className="col-3"></div>
+                        <div className="col-2">
+                            <a href="" target="/" >Current Location</a>
+                        </div>
+                        <div className="col-3">
+                            <input type="search" placeholder="City name..." className="form-control"/>
+                        </div>
+                        <div className="col-1">
+                            <input type="submit" value="Search" className="btn btn-primary"/>
+                        </div>
+                        <div className="col-3"></div>
+                    </div>
+                </form>
+            </div>
             <div className="Current">
                 <div className="row">
                     <div className="col-4"></div>
