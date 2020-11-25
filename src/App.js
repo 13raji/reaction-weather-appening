@@ -7,7 +7,7 @@ export default function App() {
       <h1>Raji's React Weather App</h1>
       <footer>An <a
           className="Link"
-          href="https://reactjs.org"
+          href="https://github.com/13raji/reaction-weather-appening"
           target="_blank"
           rel="noopener noreferrer"
         >
