@@ -1,1 +1,31 @@
+.Search {
+  margin: 10px 0px 20px 0px;
+}
+.form-control {
+  text-align: right;
+  padding-right: 0px;
+}
+.Search-btn {
+  padding-left: 0px;
+}
 
+.Current-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.City-name {
+  text-align: right;
+}
+.Units {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-top: 20px;
+}
+.Current-specifics-left {
+  text-align: right;
+  padding-right: 40px;
+}

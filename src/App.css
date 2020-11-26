@@ -1,0 +1,14 @@
+.App {
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+.Weather-app {
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}

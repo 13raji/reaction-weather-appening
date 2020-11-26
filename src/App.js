@@ -8,13 +8,15 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <CurrentWeather />
-      <Forecast />
-      <Forecast />
-      <Forecast />
-      <Forecast />
-      <Forecast />
-      <Footer />
+        <div className="Weather-app">
+          <CurrentWeather />
+          <Forecast />
+          <Forecast />
+          <Forecast />
+          <Forecast />
+          <Forecast />
+        </div>
+        <Footer />
       </div>
     </div>
   );
