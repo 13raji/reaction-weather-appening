@@ -11,8 +11,9 @@
 
 .Current-wrapper {
   background-color: #525252;
-  border: 1px solid black;
+  border: 1px solid #5a0000;
   border-radius: 5px;
+  margin: 5px 40px;
 }
 
 .City-name {

@@ -2,14 +2,14 @@
   background-color: #313131;
   max-width: 600px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #5a0000;
   border-radius: 5px;
   display: inline-block;
 }
 .Weather-app {
   max-width: 600px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid#5A0000;
   border-radius: 5px;
   display: inline-block;
   background-color: #414141;

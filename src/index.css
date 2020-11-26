@@ -1,13 +1,16 @@
 body {
-  background: rgb(82, 82, 82);
+  background: rgb(90, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(82, 82, 82, 1) 0%,
+    rgba(90, 0, 0, 1) 0%,
     rgba(65, 65, 65, 1) 35%,
     rgba(49, 49, 49, 1) 100%
   );
+  margin: 0, auto;
+}
+#root {
+  margin: 0, auto;
 }
 .App {
-  margin: 30px auto;
-  display: inline-block;
+  margin: 0 auto;
 }

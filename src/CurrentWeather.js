@@ -9,7 +9,7 @@ export default function Currentweather(){
                     <div className="row">
                         
                         <div className="Current-location col-4 w-100">
-                            <button type="button" class="btn btn-light">Current Location</button>
+                            <button type="button" class="btn btn-outline-secondary">Current Location</button>
                         </div>
                         <div className="col-5">
                             <input type="search" placeholder="City name..." autoFocus="on" className="form-control"/>
