@@ -4,13 +4,16 @@
   padding: 10px;
   border: 1px solid #5a0000;
   border-radius: 5px;
-  display: inline-block;
+}
+.App,
+.Weather-app {
+  margin: 0 auto;
+  margin-top: 45px;
 }
 .Weather-app {
   max-width: 600px;
   padding: 10px;
   border: 1px solid#5A0000;
   border-radius: 5px;
-  display: inline-block;
   background-color: #414141;
 }
