@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './CurrentWeather.css';
 import axios from "axios";
-import FormattedDate from './FormattedDate';
+
+import WeatherInfo from './WeatherInfo';
 
 export default function Currentweather(){
     const [ weatherData, setWeatherData]= useState({ready:false});
@@ -37,41 +38,9 @@ export default function Currentweather(){
                         
                     </div>
                 </form>
+                <WeatherInfo data={weatherData} />
             </div>
-            <div className="Current-wrapper">
-                <div className="Current">
-                    <div className="row">
-                        <div className="City-name col-6">
-                            <h2>{weatherData.city}</h2>
-                        </div>
-                        <div className="Current-temp col-6">
-                            <h2>{Math.round(weatherData.temperature)}°C</h2>  
-                        </div>
-                    </div>
-                </div>
-                <div className="Units row">
-                    <div className="col-5"></div>
-                    <div className="col-2">
-                        <h5>C|F</h5>
-                    </div>
-                    <div className="col-5"></div>
-                </div>
-                <div className= "Current-specifics row">
-                    <div className="Current-specifics-left col-6">
-                        <span><em><FormattedDate date={weatherData.date} /></em></span>
-                        <h4 className="text-capitalize">{weatherData.description}</h4>
-                        <h4><img src={weatherData.iconUrl} alt={weatherData.description}/></h4>
-                    </div>
-                    <div className="col-6">
-                        <ul>
-                            <li>Precipitation: 13%</li>
-                            <li>Humidity:{Math.round(weatherData.humidity)}%</li>
-                            <li>Wind:{Math.round(weatherData.wind)}km/h</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>    
-        </div>
+        </div>    
          ) } else {
  const apiKey ="03ac878f5cd649f0cfd00e677d2c2dcc";
     let city = "Glasgow";
