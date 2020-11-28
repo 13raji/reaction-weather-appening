@@ -26,7 +26,7 @@ export default function WeatherInfo(props){
                     <div className="Current-specifics-left col-6">
                         <span><em><FormattedDate date={props.data.date} /></em></span>
                         <h4 className="text-capitalize">{props.data.description}</h4>
-                        <WeatherIcon icon={props.data.icon}/>
+                        <WeatherIcon iconCode={props.data.icon}/>
                     </div>
                     
                     <div className="col-6">
