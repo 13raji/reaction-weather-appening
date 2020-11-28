@@ -19,8 +19,9 @@
 .City-name {
   text-align: right;
 }
-.Units {
-  text-align: center;
+.Unit-conversion .btn {
+  padding: 0rem 0.1rem;
+  margin-left: 20px;
 }
 
 ul {

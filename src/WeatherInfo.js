@@ -11,17 +11,14 @@ export default function WeatherInfo(props){
                             <h2>{props.data.city}</h2>
                         </div>
                         <div className="Current-temp col-6">
-                            <h2>{Math.round(props.data.temperature)}°C</h2>  
+                            <h2>
+                                {Math.round(props.data.temperature)}°C 
+                                <span className="Unit-conversion"><button type="button" className="btn btn-dark ">°F</button></span>
+                            </h2>
                         </div>
                     </div>
                 </div>
-                <div className="Units row">
-                    <div className="col-5"></div>
-                    <div className="col-2">
-                        <h5>C|F</h5>
-                    </div>
-                    <div className="col-5"></div>
-                </div>
+                
                 <div className= "Current-specifics row">
                     <div className="Current-specifics-left col-6">
                         <span><em><FormattedDate date={props.data.date} /></em></span>
