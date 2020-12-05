@@ -1,29 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Forecast.css';
+import axios from 'axios';
+import WeatherForecastPreview from './WeatherForecastPreview';
 
 export default function Forecast(props){
-    return(
-        <div className="Forecast-wrapper">
-            <div className="Forecast row">
-                
-                <div className="Time col-1">
-                    <h6>18:00</h6>
-                </div>
-                <div className="Forecast-temp col-2">
-                    <h4>13°C</h4>
-                </div>
-                <div className="Forecast-icon col-1">
-                    <h4>☁</h4>
-                </div>
-                <div className="Feels-like col-4">
-                    <h6>Feels like 12°C</h6>
-                </div>
-                <div className="Forecast-precip col-4">
-                    <h6>Precipitaion: 69%</h6>
-                </div>
-                
-                
-            </div>
+    const [loaded, setLoaded]= useState(false);
+    const [forecast, setForecast]= useState(null);
+    function handleForecastResponse(response){
+        setForecast(response.data);
+        setLoaded(true);
+    }
+   
+    if (loaded && props.city=== forecast.city.name) {
+        return( 
+        <div className="Forecast-wrapper row">
+            <WeatherForecastPreview data={forecast.list[0]}/>
+            <WeatherForecastPreview data={forecast.list[1]}/>
+            <WeatherForecastPreview data={forecast.list[2]}/>
+            <WeatherForecastPreview data={forecast.list[3]}/>
+            <WeatherForecastPreview data={forecast.list[4]}/>
+            <WeatherForecastPreview data={forecast.list[5]}/>
         </div>
     )
+        } else {
+             const apiKey ="03ac878f5cd649f0cfd00e677d2c2dcc";
+            let units = "metric";
+            let apiUrl= `http://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=${units}`;
+            axios.get(apiUrl).then(handleForecastResponse);
+            return null;
+        }
 }

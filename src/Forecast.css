@@ -6,24 +6,7 @@
   border: 1px solid #5a0000;
   border-radius: 5px;
 }
-.Time {
-  padding-top: 5px;
-  text-align: right;
-}
-
-.Forecast-temp {
-  text-align: right;
-}
-
-.Forecast-icon {
-  text-align: right;
-}
-
-.Feels-like {
-  padding-top: 5px;
-  text-align: right;
-}
-
-.Forecast-precip {
-  padding-top: 5px;
+.Forecast canvas {
+  display: block;
+  color: black;
 }
