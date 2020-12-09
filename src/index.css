@@ -1,12 +1,13 @@
 body {
-  background: rgb(90, 0, 0);
+  background: rgb(241, 212, 212);
   background: linear-gradient(
-    90deg,
-    rgba(90, 0, 0, 1) 0%,
-    rgba(65, 65, 65, 1) 35%,
-    rgba(49, 49, 49, 1) 100%
+    10deg,
+    rgba(241, 212, 212, 1) 0%,
+    rgba(190, 219, 187, 1) 85%
   );
+
   margin: 0, auto;
+  color: #484c7f;
 }
 #root {
   margin: 0, auto;

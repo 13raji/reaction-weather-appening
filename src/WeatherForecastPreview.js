@@ -24,16 +24,16 @@ export default function WeatherForecastPreview(props){
     return(
     <div className="Forecast col-2">
                 <div className="Time">
-                    <h6>{hours()}</h6>
+                    <p>{hours()}</p>
                 </div>
                 <div className="Forecast-temp">
-                    <h4>{temperature()}</h4>
+                    <h6>{temperature()}</h6>
                 </div>
                 <div className="Forecast-icon">
                     <WeatherIcon iconCode={props.data.weather[0].icon}/>
                 </div>
                 <div className="Feels-like">
-                    <h6>{feelsLike()}</h6>
+                    <p>{feelsLike()}</p>
                 </div>
             </div>
             )

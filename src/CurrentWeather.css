@@ -9,13 +9,6 @@
   padding-left: 0px;
 }
 
-.Current-wrapper {
-  background-color: #525252;
-  border: 1px solid #5a0000;
-  border-radius: 5px;
-  margin: 5px 40px;
-}
-
 .City-name {
   text-align: right;
 }
@@ -27,8 +20,9 @@
 ul {
   list-style: none;
   padding-top: 20px;
+  padding-left: 10px;
 }
 .Current-specifics-left {
   text-align: right;
-  padding-right: 40px;
+  padding-right: 10px;
 }

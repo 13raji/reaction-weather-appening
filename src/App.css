@@ -1,20 +1,60 @@
 .App {
   font-family: "Hammersmith One", sans-serif;
-  background-color: #313131;
-  max-width: 600px;
+  font-size: 0.8rem;
+  background: #8db596;
+  max-width: 500px;
   padding: 10px;
-  border: 1px solid #5a0000;
+  border: 1px solid #707070;
   border-radius: 5px;
-}
-.App,
-.Weather-app {
   margin: 0 auto;
-  margin-top: 45px;
+  margin-top: 25px;
 }
+
 .Weather-app {
-  max-width: 600px;
+  max-width: 500px;
   padding: 10px;
-  border: 1px solid#5A0000;
+  border: 1px solid#ac8daf;
   border-radius: 5px;
-  background-color: #414141;
+  background-color: #bedbbb;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.Current-wrapper {
+  background: rgb(241, 212, 212);
+  background: linear-gradient(
+    10deg,
+    rgba(241, 212, 212, 1) 0%,
+    rgba(190, 219, 187, 1) 85%
+  );
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin: 20px 40px;
+  padding-top: 25px;
+}
+.Forecast-wrapper {
+  background: rgb(241, 212, 212);
+  background: linear-gradient(
+    10deg,
+    rgba(241, 212, 212, 1) 0%,
+    rgba(190, 219, 187, 1) 85%
+  );
+  max-width: 600px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+.Forecast canvas {
+  display: block;
+  color: #aa6969;
+  height: 40px;
+  width: 40px;
+}
+
+.Forecast {
+  text-align: center;
+  font-size: smaller;
+  padding: 7px;
+  line-height: 1rem;
 }
