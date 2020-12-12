@@ -15,20 +15,20 @@ export default function WeatherTemperature(props){
     if (unit === 'celcius') {
         return (
         <div className="WeatherTemperature">
-            <h3>
+            <h5>
                 {Math.round(props.celcius)}°C 
-                <span className="Unit-conversion"><button type="button" className="btn btn-dark " onClick={showFahrenheit}>°F</button></span>
-            </h3>
+                <span className="Unit-conversion"><button type="button" className="btn btn-secondary btn-sm" onClick={showFahrenheit}>°F</button></span>
+            </h5>
         </div>
         );
 }
      else {
          return(
              <div className="WeatherTemperature">
-            <h2>
+            <h5>
                 {Math.round(fahrenheit)}°F 
-                <span className="Unit-conversion"><button type="button" className="btn btn-dark " onClick={showCelcius}>°C</button></span>
-            </h2>
+                <span className="Unit-conversion"><button type="button" className="btn btn-secondary btn-sm" onClick={showCelcius}>°C</button></span>
+            </h5>
         </div>
          )
         }
