@@ -26,7 +26,7 @@ canvas {
 }
 ul {
   list-style: none;
-  padding: 5px 0px 0px 13px;
+  padding: 5px 5px 0px 13px;
 }
 .Current-specifics-left {
   text-align: right;
@@ -34,4 +34,7 @@ ul {
 }
 .Current-specifics-right {
   padding: 0px 7px;
+}
+.Time p {
+  margin-bottom: 10px;
 }
